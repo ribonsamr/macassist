@@ -1,0 +1,17 @@
+{
+    "Force-Clean the Trash": "cd ~/.Trash; rm -rf *",
+    "Show hidden files (require relaunch Finder after)": "defaults write com.apple.finder AppleShowAllFiles YES",
+    "Hide hidden files (require relaunch Finder after)": "defaults write com.apple.finder AppleShowAllFiles NO",
+    "Disable PressAndHoldChars": "defaults write -g ApplePressAndHoldEnabled -bool false",
+    "Enable PressAndHoldChars": "defaults write -g ApplePressAndHoldEnabled -bool True",
+    "reLaunch the dock": "defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock",
+    "relaunch Finder": "killall Finder",
+    "fix camera": "sudo killall VDCAssistant;sudo killall AppleCameraAssistant",
+    "Disable AirDrop": "sudo ifconfig awdl0 down",
+    "Enable AirDrop": "sudo ifconfig awdl0 up",
+    "Flush DNS": "sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; say cache flushed",
+    "Clear Terminal's History": "rm ~/.bash_history; touch .bash_history",
+    "Clear Terminal's Sessions": "rm ~/.bash_sessions",
+    "Check wifi connected devices": "sudo nmap -sP 192.168.1.0/24",
+    "Check processes listening on port 80": "sudo lsof -i ':80'"
+}
