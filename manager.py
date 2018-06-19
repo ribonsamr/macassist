@@ -1,5 +1,6 @@
 """
-this module needs more work.
+A PROTOTYPE.
+This module needs more work.
 """
 from ma_head import data_file_path, json, safely_strint
 
