@@ -18,7 +18,7 @@ main_input_message = underlinecode + ('command:') + endcode
 main_error_message = Fore.RED + 'Please choose a valid number.' + Fore.RESET
 main_open_message = bright_yellow + 'macAssist2' + Fore.WHITE + ' – Refreshed by amressam for 2018 –'
 
-data_file_path = path.dirname(path.realpath(__file__)) + '/data'
+data_file_path = path.dirname(path.realpath(__file__)) + '/data.json'
 
 def safely_strint(_str) -> bool or int:
 	try: return int(_str)
