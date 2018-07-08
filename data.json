@@ -14,5 +14,8 @@
     "Clear Terminal's Sessions": "rm ~/.bash_sessions",
     "Check wifi connected devices": "sudo nmap -sP 192.168.1.0/24",
     "Check processes listening on port 80": "sudo lsof -i ':80'",
-    "Start a web server on port 80":"cd; sudo python -m SimpleHTTPServer 80"
+    "Start a web server on port 80":"cd; sudo python -m SimpleHTTPServer 80",
+    "Start Apache": "sudo apachectl start",
+    "Stop Apache": "sudo apachectl stop",
+    "Restart Apache": "sudo apachectl restart"
 }
