@@ -1,4 +1,4 @@
-# macAssist2
+# MacAssist2
 
 ### How to use?
 
