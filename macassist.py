@@ -73,7 +73,8 @@ def confirm_execution(command_name, command) -> bool:
               wrap_string(command_name, front=Fore.CYAN))
         print('', wrap_string("Command:", front=Fore.YELLOW), command)
         print('\n', wrap_string(
-            "Do you want to exceute the command? [y/n] [yes]: ", front=Fore.RED), end='')
+            "Do you want to exceute the command? [y/n] [yes]: ",
+            front=Fore.RED), end='')
         user_input = input()
         if user_input == 'no' or user_input == 'n':
             print()
@@ -129,7 +130,7 @@ def main():
             run()  # look into manager.py
             continue
 
-        if user_input in 'exit -e e quit -q q ty -ty thankyou'.split() + ['thank you']:
+        if user_input in 'exit -e e quit -q q'.split():
             raise KeyboardInterrupt  # Smart move, Amr.
 
         executer(user_input)
